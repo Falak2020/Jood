@@ -12,7 +12,7 @@ html,body{
     
     
 }
-.min-container{
+.my-container{
     width: 100%;
     margin: 0 auto;
     padding: 0.5rem 1rem;
@@ -55,7 +55,7 @@ html,body{
  right:100px;
  display: none;
 }
-.top-navbar .min-container{
+.top-navbar .my-container{
     position:relative;
     padding-top: 1rem;     
 }
@@ -100,7 +100,51 @@ html,body{
     top:100px; 
     z-index: 0;
 }
+/*-------Section1-----------------------------*/
+#section-1 > .my-container{
+    display:flex;
+    justify-content: space-evenly;
 
+}
+.ec-logo{
+    margin-top: 1rem;
+    
+}
+.circle-1{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    margin-top: 5rem;  
+    position: relative;     
+}
+.circle-2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top:75px;
+    left:75px;   
+}
+.circle-1-image{
+    position: absolute;
+    top:70px;
+    left:385px;
+   
+}
+.circle-2-image{
+    position: absolute;
+    bottom:70px;
+    left: 15px;
+}
+.iphon-x3-image{
+    height: 500px;
+    position: relative;
+    left:105px;
+    bottom: 25px;
+    
+}
 /*--------------------------------------*/
 @media (min-width: 768px) {
     .min-container {
@@ -135,7 +179,7 @@ html,body{
         text-decoration: underline;
         color: #FFBB00 !important;
     }
-    .top-navbar .min-container{
+    .top-navbar .my-container{
         display: flex;
         padding-top: 2rem;     
     }
@@ -144,20 +188,24 @@ html,body{
         margin-left: 5rem;
         height: 3rem;    
     }
+    /*-----------------------------------*/
+    .ec-logo{
+        margin-top: 5rem;
+    }
 }
 @media (min-width: 992px) {
-    .min-container {
+    .my-container {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
-    .min-container {
+    .my-container {
         max-width: 1140px;
     }
 }
 @media (min-width: 1920px) {
-    .min-container {
+    .my-container {
         max-width: 1400px;
     }
 }
