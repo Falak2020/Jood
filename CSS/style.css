@@ -1,0 +1,163 @@
+@import url("colores.css");
+*{
+    box-sizing:border-box ;
+}
+html,body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-weight:300;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.6;
+    
+    
+}
+.min-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+
+}
+.hide{
+    display: none;
+}
+.top-navbar{
+    background-image:url("../images/blue_background_crop.png") ;
+    background-position:bottom;
+    height: 200px;
+    background-size: cover;  
+    
+}
+
+ .top-navbar .navbar .navbar-brand img{
+    height: 2rem;
+}
+.navbar-light .navbar-toggler{
+    position: absolute;
+    right: 0;
+    color:white;
+    border: transparent;
+    font-size: 1.5rem;   
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#FFBB00;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #FFFFFF;
+}
+.btn-1{
+ font-size: 0.8rem;
+ padding:0.5rem 2rem;
+ border-radius: 10px;
+ border:none;
+ position: relative;
+ right:100px;
+ display: none;
+}
+.top-navbar .min-container{
+    position:relative;
+    padding-top: 1rem;     
+}
+.top-navbar .showcase{
+    position: absolute;
+    top:200px;
+    left:50px;
+}
+.top-navbar .showcase>h1{
+    color: #FFFFFF;
+    font-size:3rem;
+    font-weight: bold;
+    margin-right:30rem;
+    font-family: 'Poppins', sans-serif;
+    line-height:1.6;
+}
+.top-navbar .showcase>p{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-right: 40rem;
+}
+.top-navbar .showcase a{
+    margin:0 1rem;
+}
+.btn-2{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+}
+.iphon-x1-image{
+    position: absolute;
+    right: 20rem;
+    top:150px;
+    z-index: 1;
+    height: 500px;
+}
+.iphon-x2-image{
+    height: 500px;
+    position: absolute;
+    right: 10rem;
+    top:100px; 
+    z-index: 0;
+}
+
+/*--------------------------------------*/
+@media (min-width: 768px) {
+    .min-container {
+        max-width: 720px;
+    }
+    .hide{
+        display: inline;
+    }
+    .btn-1{
+        display:inline;
+    }
+    .top-navbar{
+        height: 700px;
+        background-size: cover;
+        background-position:bottom;  
+    }
+     #navbarNavAltMarkup{
+        position: relative;
+        left:150px;
+       
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 0;    
+    }
+    .navbar-light .navbar-nav a{
+       display: inline;
+       margin-left: 2rem;   
+    }
+    .navbar-light .navbar-nav a:hover{
+        text-decoration: underline;
+        color: #FFBB00 !important;
+    }
+    .top-navbar .min-container{
+        display: flex;
+        padding-top: 2rem;     
+    }
+    
+    .top-navbar .navbar .navbar-brand img{
+        margin-left: 5rem;
+        height: 3rem;    
+    }
+}
+@media (min-width: 992px) {
+    .min-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .min-container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1920px) {
+    .min-container {
+        max-width: 1400px;
+    }
+}
