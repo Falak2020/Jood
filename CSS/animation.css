@@ -1,0 +1,47 @@
+
+
+.circle-1-image{
+    position: absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    animation: circle-1-image 10s linear infinite ;    
+}
+.circle-2-image{
+    position: absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    animation: circle-2-image 10s linear infinite; 
+    
+}
+
+    @keyframes circle-1-image{
+        
+        0%{
+        
+            transform:rotate(0deg)
+                      translate(-225px)
+                      rotate(0deg);
+        
+        }
+        100%{
+            
+            transform:rotate(360deg)
+                    translate(-225px)
+                    rotate(-360deg);
+        }
+}
+
+@keyframes circle-2-image{   
+    0%{ 
+        transform:rotate(0deg)
+                translate(225px)
+                rotate(0deg);
+    
+    }
+    100%{
+        
+        transform:rotate(360deg)
+                translate(225px)
+                rotate(-360deg);
+    }
+}

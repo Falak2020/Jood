@@ -103,12 +103,11 @@ html,body,p,h2{
 /*-------Section1-----------------------------*/
 #section-1 > .my-container{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 .ec-logo{
-    margin-top: 1rem;
-    
+    margin-top: 1rem;   
 }
 .circle-1{
     height: 450px;
@@ -127,17 +126,8 @@ html,body,p,h2{
     top:75px;
     left:75px;   
 }
-.circle-1-image{
-    position: absolute;
-    top:70px;
-    left:385px;
-   
-}
-.circle-2-image{
-    position: absolute;
-    bottom:70px;
-    left: 15px;
-}
+
+
 .iphon-x3-image{
     height: 500px;
     position: relative;
@@ -145,20 +135,12 @@ html,body,p,h2{
     bottom: 25px;
     
 }
-#about-us .my-container{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 5rem;
-    position: relative;  
-}
 #about-us h2{
-
 line-height: 1.4;
 color: #333333;
 font-weight:bold;
-font-size: 2.6rem;
+font-size: 1.2rem;
 margin:1rem 0;
-
 }
 #about-us p{
     color: #8A8A8A;
@@ -167,9 +149,11 @@ margin:1rem 0;
 }
 .easy-search{
     top: 100px;  
+    text-align: center;
+    
 }
-.btn-about-us{
-    margin-top: 6.5rem;
+.btn-about-us,.btn-features{
+    margin-top: 1rem;
     background-color: rgb(255, 187, 0,0.2);
     border: none;
     border-radius: 10px;
@@ -178,6 +162,30 @@ margin:1rem 0;
 }
 .app-store{
     margin-left: 1rem;
+}
+/*---Section-2 Features-----------------*/
+#section-2 .my-container{
+    text-align: center;
+}
+.iphone1-features{
+    height:500px ;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.iphone2-features{
+    position: relative;
+    left: -60px;
+    top:20px;
+    height: 490px;
+    
+    z-index:0;
+   
+}
+.iphone-features{
+    position: relative;
+    margin-top: 5rem;
+    border: 1px solid black;
 }
 /*--------------------------------------*/
 @media (min-width: 768px) {
@@ -226,6 +234,39 @@ margin:1rem 0;
     .ec-logo{
         margin-top: 5rem;
     }
+    #section-1 > .my-container{
+        display:flex;
+        justify-content: space-evenly;
+    
+    }
+
+    /****************************************/
+    #about-us .my-container{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        position: relative;  
+    }
+
+    #about-us h2{
+        font-size: 2.6rem;
+        margin:1rem 0;
+        
+    }
+    .easy-search{
+        top: 100px;  
+        text-align: left;
+    }
+    .btn-about-us{
+        margin-top: 6.5rem;
+    }
+    /****************************************/
+    #section-2 .my-container{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+   
 }
 @media (min-width: 992px) {
     .my-container {
