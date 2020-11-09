@@ -179,24 +179,50 @@ html,body,p,h2{
 #features .my-container{
     text-align: center;
 }
-.iphone1-features{
-    height:500px ;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-}
-.iphone2-features{
-    position: relative;
-    left: -60px;
-    top:20px;
-    height: 490px;
-    
-    z-index:0;
-   
-}
 .iphone-features{
     position: relative;
     margin-top: 5rem;
+    border: 1px solid black;
+}
+.iphone1-features{
+    height:500px ;
+    position: absolute;
+    right:75px;
+    z-index: 2;
+}
+.iphone2-features{
+    position: absolute;
+    top:20px;
+    left:-20px;
+    height: 490px;
+    z-index:1;
+   
+}
+
+.circl-1-back-1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    right:0;
+    top: 100px;   
+}
+.circl-1-back-2{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right:45px;
+    top: 150px;  /*100+(125-75)*/ 
+}
+.circl-2-back{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:250px;
+    left:55px;
+    z-index:0;
 }
 /*--------------------------------------*/
 @media (min-width: 768px) {
@@ -216,8 +242,7 @@ html,body,p,h2{
     }
      #navbarNavAltMarkup{
         position: relative;
-        left:150px;
-       
+        left:150px;  
     }
     .navbar-light .navbar-nav .nav-link{
         color: #FFFFFF;
@@ -250,9 +275,6 @@ html,body,p,h2{
         justify-content: space-evenly;
     
     }
-    #features p{
-        margin-right: 5rem;  
-    }
     .features-grid{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -283,8 +305,8 @@ html,body,p,h2{
     #features .my-container{
         text-align: left;
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 1rem;
+        grid-template-columns: 1.1fr 1fr;
+        
     }
     .btn-features{
         margin-top: 5rem;
