@@ -307,36 +307,68 @@ p,h2{
    top:2px;   
    text-align: center;
 }
+.banar-background{
+    background-image: url('../images/fff.svg'); 
+     
+}
 /*--------------------------------------*/
-.display{
+.display-form{
     display:grid;
-    grid-template-columns: auto auto;
-   
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 .text1 ,.text2, .text3,.btn-send{
-    background-color:#FBFBFB;
+    background-color:#F8EFEF;
     border:none;
-    border-radius: 15px;
-}
-.text1{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    border-radius: 15px;  
     padding: 1rem;
- }
- .text2{
-    grid-column-start:3;
-    grid-column-end: 5;
- }
-.text3{
-   grid-column-start: 1;
-   grid-column-end: 5;
 }
 .btn-send{
     background-color:#3096FE ;
-    grid-column-start: 3;
-   
-    
+    color: #FFFFFF;
+    padding: 1rem 3rem;      
+}
+.center-btn{
+    text-align: center;
+}
+#footer{
+    background-color:#1487FD;
+}
+#footer .my-container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+      
+}
+#footer .my-container .navbar-brand{
+    margin-top: 2rem;
+}
+#footer .my-container #navbarNavAltMarkup{
+    left: 0;
+}
+#footer .my-container #navbarNavAltMarkup .navbar-nav a{
+    margin: 0 2rem;
+}
+#footer .my-container #navbarNavAltMarkup .navbar-nav{
+   align-items: center;
+}
+#footer .my-container .socialmedia a{
+color: #FFFFFF;
+
+}
+.socialmedia{
+    font-size: 2rem; 
+    display: flex;
+    justify-content: space-between;
+}
+.socialmedia-bg{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255,15%);
+    margin:2rem 1rem;
+
 }
 /*--------------------------------------*/
 @media (min-width: 768px) {
@@ -459,6 +491,30 @@ p,h2{
         text-align: left;
         top: 120px;   
     }
+    .display-form{
+        display:grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+       
+    }
+    .text1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+     }
+     .text2{
+        grid-column-start:3;
+        grid-column-end: 5;
+     }
+    .text3{
+       grid-column-start: 1;
+       grid-column-end: 5;
+    }
+    
+    .center-btn{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
 }
 @media (min-width: 992px) {
     .my-container {
@@ -475,6 +531,7 @@ p,h2{
     .my-container {
         max-width: 1400px;
     }
+}
 @media (min-width: 1400px) {
     .my-container {
          max-width: 1330px;

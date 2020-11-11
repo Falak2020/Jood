@@ -10,6 +10,9 @@ background-color: #FFBB00;
 .bg-white{
     background-color: #ffffff;
 }
+.bg-white-trans{
+    background-color:rgba(255, 255, 255,5%);
+}
 .text-white{
     color: #FFFFFF;
 }
