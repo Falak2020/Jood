@@ -2,15 +2,19 @@
 *{
     box-sizing:border-box ;
 }
-html,body,p,h2{
+html,body{
     margin:0;
     padding: 0;
     font-size: 16px;
     font-weight:300;
     font-family:'Roboto', sans-serif;
-    line-height: 1.6;
-    
-    
+    line-height: 1.6;   
+}
+p,h2{
+    font-family:'Roboto', sans-serif;
+    line-height: 1.6; 
+    font-weight:300;
+    font-size: 16px;  
 }
 .my-container{
     width: 100%;
@@ -107,8 +111,11 @@ html,body,p,h2{
 
 }
 .ec-logo{
-    margin-top: 1rem;   
+    margin-top: 1rem;  
+    margin-right:2rem;
+      
 }
+
 .circle-1{
     height: 450px;
     width: 450px;
@@ -133,14 +140,19 @@ html,body,p,h2{
     bottom: 25px;
     
 }
-#about-us h1 , #features h1 , #application-screens h1{
+#about-us h1 , #features h1 , #application-screens h1 ,#contact-us h1{
    line-height: 1.4;
    color: #333333;
    font-weight:bold;
    font-size: 1.5rem;
    margin:1rem 0;
+   margin-right: 10rem;
+   font-family:'Roboto', sans-serif;
 }
-#about-us p , #features p,#application-screens p {
+#application-screens h1 ,#contact-us h1{
+    margin-right: 0;
+}
+#about-us p , #features p,#application-screens p,#contact-us p{
     color: #8A8A8A;
     margin-bottom: 2rem;  
 }
@@ -159,9 +171,7 @@ html,body,p,h2{
     padding:0.5rem 1.5rem ;
     color: #FFBB00;
 }
-.app-store{
-    margin-top: 0.7rem;
-}
+
 /*---Section-2 Features-----------------*/
 .search-grid .features-search{
     grid-row-start: 1;
@@ -243,6 +253,91 @@ html,body,p,h2{
     position: absolute;
     opacity: 40%;
 }
+#application-screens .statistic h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#application-screens .statistic  p{
+    font-size: 1rem;
+    color: #333333;
+    font-weight: bold;
+}
+.statistic{
+    display:flex;
+    justify-content: space-between;
+}
+/*--------Download---------------------------*/
+.btn-download1 , .btn-download2{
+    border: none;
+    border-radius: 15px;
+}
+.btn-download2{
+  margin:2rem auto;
+}
+.image1{
+    position: absolute;
+    right:0;
+    bottom: 0;   
+}
+.image2{
+   position: absolute;
+   right:120px;
+   bottom: 0;
+   z-index: 1;
+}
+.image3{
+   position: absolute;
+   right:270px;
+   bottom: 0;
+}
+#download .my-container h1 {
+   line-height: 1.4;
+   color: #FFFFFF;
+   font-weight:bold;
+   font-size:1.5rem;
+   margin:1rem 0;
+   font-family:'Roboto', sans-serif; 
+}
+#download .my-container p{
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 2rem 0; 
+}
+.download-application{
+   top:2px;   
+   text-align: center;
+}
+/*--------------------------------------*/
+.display{
+    display:grid;
+    grid-template-columns: auto auto;
+   
+    gap: 2rem;
+}
+.text1 ,.text2, .text3,.btn-send{
+    background-color:#FBFBFB;
+    border:none;
+    border-radius: 15px;
+}
+.text1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem;
+ }
+ .text2{
+    grid-column-start:3;
+    grid-column-end: 5;
+ }
+.text3{
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+.btn-send{
+    background-color:#3096FE ;
+    grid-column-start: 3;
+   
+    
+}
 /*--------------------------------------*/
 @media (min-width: 768px) {
     .min-container {
@@ -320,9 +415,7 @@ html,body,p,h2{
     .btn-about-us{
         margin-top: 6.5rem;
     }
-    .app-store{
-        margin-left:1rem;
-    }
+    
     #about-us h1 , #features h1 , #application-screens h1{
         font-size: 2rem;
     }
@@ -345,9 +438,27 @@ html,body,p,h2{
         margin-top: 5rem;
     }
     .center-me {
-        margin:3rem 18rem
+        margin:3rem 18rem;
     }
-    
+ /*-----------------------------*/
+    .btn-download2{
+        margin-left: 2rem;
+    }
+     #download .my-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        position: relative;
+    }
+    #download .my-container h1{
+        margin-right: 4rem;
+        font-size: 2rem;
+    }
+    .download-application{
+        position: relative;
+        text-align: left;
+        top: 120px;   
+    }
 }
 @media (min-width: 992px) {
     .my-container {
@@ -363,5 +474,9 @@ html,body,p,h2{
 @media (min-width: 1920px) {
     .my-container {
         max-width: 1400px;
+    }
+@media (min-width: 1400px) {
+    .my-container {
+         max-width: 1330px;
     }
 }
