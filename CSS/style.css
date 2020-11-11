@@ -242,8 +242,9 @@ p,h2{
     text-align: center;
 }
 .carousel-item{
-    transition: delay 0.1;
+  text-align: center; 
 }
+
 .application-map{
     display: flex;
     justify-content: center;
