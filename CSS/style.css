@@ -63,18 +63,19 @@ p,h2{
     position:relative;
     padding-top: 1rem;     
 }
-.top-navbar .showcase{
+.carousel-caption{
+    text-align: left;
     position: absolute;
-    top:200px;
-    left:50px;
+    top:100px;
+    left: 200px;   
 }
-.top-navbar .showcase>h1{
+.carousel-caption h1{
     color: #FFFFFF;
     font-size:3rem;
     font-weight: bold;
-    margin-right:30rem;
+    margin-right:20rem;
     font-family: 'Poppins', sans-serif;
-    line-height:1.6;
+    line-height:1.6; 
 }
 .top-navbar .showcase>p{
     font-family: 'Poppins', sans-serif;
@@ -104,6 +105,7 @@ p,h2{
     top:100px; 
     z-index: 0;
 }
+
 /*-------Section1-----------------------------*/
 #section-1 > .my-container{
     display:flex;
@@ -241,14 +243,21 @@ p,h2{
 .center-me {
     text-align: center;
 }
-.carousel-item{
-  text-align: center; 
-}
 
 .application-map{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
+}
+.iphone-5-images{
+    display: flex;
+    justify-content: space-between;
+}
+.iphone-5-images .ipone-width-s{
+    width:200px;
+}
+.iphone-5-images .ipone-width-l{
+    width:250px;
 }
 .map{
     position: absolute;
