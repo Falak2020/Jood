@@ -60,12 +60,18 @@ p,h2{
     right:100px;
     display: none;
     right: 50px;
-    outline: none;
+    outline: none;   
+}
+.btn-1 , .btn-2 {
     box-shadow: 6px 8px 6px #888888;
 }
-.btn-1:hover{
-    box-shadow: 3px 1px 2px #888888;
+
+.btn-1:hover ,.btn-2:hover {
     outline: none;
+    box-shadow: 3px 1px 2px #888888;
+}
+.a-style a:hover{
+    text-decoration: none;
 }
 .top-navbar .my-container{
     position:relative;
