@@ -46,3 +46,14 @@
     }
 }
 
+.fade-in {
+    animation: fadeIn ease 6s infinite;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
