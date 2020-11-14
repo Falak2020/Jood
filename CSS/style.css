@@ -2,6 +2,10 @@
 *{
     box-sizing:border-box ;
 }
+@font-face{
+    src: url(../fonts/FontsFree-Net-URW-DIN-Arabic-Bold-1.ttf);
+    font-family:URW-DIN-Arabic ;
+}
 html,body{
     margin:0;
     padding: 0;
@@ -269,16 +273,17 @@ p,h2{
 }
 #application-screens .statistic h2{
     font-size: 2rem;
-    font-weight: bold;
+    font-family: URW-DIN-Arabic;
 }
 #application-screens .statistic  p{
-    font-size: 1rem;
+    font-size: 1em;
     color: #333333;
     font-weight: bold;
 }
 .statistic{
     display:flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
 }
 /*--------Download---------------------------*/
 .btn-download1 , .btn-download2{
@@ -543,7 +548,7 @@ color: #FFFFFF;
         margin-top: 6.5rem;
     }
     
-    #about-us h1 , #features h1 , #application-screens h1{
+    #about-us h1 , #features h1 {
         font-size: 2rem;
         margin-right: 10rem;
     }
@@ -567,6 +572,10 @@ color: #FFFFFF;
     }
     .center-me {
         margin:3rem 18rem;
+    }
+    .statistic{
+        justify-content: space-around;
+        flex-direction: row;
     }
  /*-----------------------------*/
     .btn-download2{
