@@ -37,7 +37,7 @@ p,h2{
     background-size: cover;     
 }
  .top-navbar .navbar .navbar-brand img{
-    height: 2rem;
+    height: 2.5rem;
 }
 .navbar-light .navbar-toggler {
     position: absolute;
@@ -47,10 +47,16 @@ p,h2{
 }
 .navbar-light .navbar-toggler-icon {
     background-image: url('../images/hm.png');
+    
 }
 .navbar-light .navbar-nav .nav-link{
     color: black;
     font-weight: bold;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 2rem 0;
+    z-index: 1;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: #FFBB00;
@@ -61,10 +67,9 @@ p,h2{
     border-radius: 10px;
     border:none;
     position: relative;
-    right:100px;
-    display: none;
-    right: 50px;
-    outline: none;   
+    bottom: -50px;
+    right: 100px;
+    outline: none; 
 }
 .btn-1 , .btn-2 {
     box-shadow: 6px 8px 6px #888888;
@@ -87,18 +92,27 @@ p,h2{
     top:100px;
     left: 200px;   
 }
+.carousel-control-next-icon{
+    background-image: url(../images/next.svg);
+}
+.carousel-control-prev-icon{
+    background-image: url(../images/prev.svg);
+}
+.carousel-indicators li{
+   background-color: #8A8A8A;
+}
 .carousel-caption h1{
     color: #FFFFFF;
     font-size:3rem;
     font-weight: bold;
-    margin-right:20rem;
+    margin-right:25rem;
     font-family: 'Poppins', sans-serif;
     line-height:1.6; 
 }
 .carousel-caption p{
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
-    margin-right: 30rem;
+    margin-right: 35rem;
     margin-bottom: 3rem;
 }
 .carousel-caption img{
@@ -116,15 +130,13 @@ p,h2{
 }
 
 /*-------Section1-----------------------------*/
-#section-1 > .my-container{
-    display:flex; 
-    justify-content: center; 
+#section-1 >.my-container{
+    text-align: center;
 }
 .ec-logo{
-    margin-top: 2rem;  
-    margin-right:1rem;      
-}
+    margin-top: 2rem;
 
+}
 .circle-1{
     height: 450px;
     width: 450px;
@@ -201,18 +213,17 @@ p,h2{
 .iphone-features{
     position: relative;
     margin-top: 5rem;
-    margin-bottom: 35rem;
 }
 .iphone1-features{
     height:500px ;
     position: absolute;
-    right:75px;
+    right:80px;
     z-index: 2;
 }
 .iphone2-features{
     position: absolute;
     top:20px;
-    left:-20px;
+    left:30px;
     height: 490px;
     z-index:1;  
 }
@@ -238,7 +249,7 @@ p,h2{
     border-radius: 50%;
     position: absolute;
     top:250px;
-    left:55px;
+    left:100px;
     z-index:0;
 }
 .prik1-background{
@@ -295,7 +306,7 @@ p,h2{
     box-shadow: 3px 3px 5px #888888;
 }
 .btn-download2{
-  margin:2rem auto;
+  margin-top: 1.5rem;
 }
 .image1{
     position: absolute;
@@ -478,6 +489,8 @@ color: #FFFFFF;
     }
     .btn-1{
         display:inline;
+        right: 150px;
+        bottom: 0px;
     }
     .top-navbar{
         height: 700px;
@@ -491,7 +504,8 @@ color: #FFFFFF;
     .navbar-light .navbar-nav .nav-link{
         color: #FFFFFF;
         font-weight: bold;
-        padding: 0;    
+        background-color:transparent;   
+        border: none;
     }
     .navbar-light .navbar-nav a{
        display: inline;
@@ -518,8 +532,6 @@ color: #FFFFFF;
     #section-1 > .my-container{
         display:flex;
         justify-content: center;
-
-    
     }
     .features-grid{
         display:grid;
@@ -530,19 +542,13 @@ color: #FFFFFF;
     /****************************************/
     #about-us .my-container{
         display:grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 5rem;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
         position: relative;  
-    }
-
-    #about-us h2{
-        font-size: 2.6rem;
-        margin:1rem 0;
-        
-    }
+    } 
     .easy-search{
         text-align: left;
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
     }
     .btn-about-us{
         margin-top: 6.5rem;
@@ -550,26 +556,37 @@ color: #FFFFFF;
     
     #about-us h1 , #features h1 {
         font-size: 2rem;
-        margin-right: 10rem;
+        margin-right: 15rem;
+    }
+    #about-us p {
+      margin-right: 4rem;
     }
     /****************************************/
     #features .my-container{
         text-align: left;
         display: grid;
         grid-template-columns: 1.1fr 1fr;
-        position: relative;
-        
+        position: relative;  
+        padding-left: 7rem; 
+    }
+    #features p{
+        margin-right: 5rem;
+    }
+    #features .my-container .features-grid .search-grid p{
+        margin-right:2rem;
     }
     #features{
         position: relative;
+        padding-bottom: 5rem;
     }
     .pric2{
         position: absolute;
         top:150px;
     }
     .btn-features{
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
+    /*-----------------------------*/
     .center-me {
         margin:3rem 18rem;
     }
@@ -577,9 +594,10 @@ color: #FFFFFF;
         justify-content: space-around;
         flex-direction: row;
     }
- /*-----------------------------*/
+ 
     .btn-download2{
         margin-left: 2rem;
+        margin-top: 0;
     }
      #download .my-container{
         display: grid;
