@@ -6,25 +6,19 @@
     src: url(../fonts/FontsFree-Net-URW-DIN-Arabic-Bold-1.ttf);
     font-family:URW-DIN-Arabic ;
 }
-html,body{
+html,body,h2{
     margin:0;
     padding: 0;
     font-size: 16px;
     font-weight:300;
     font-family:'Roboto', sans-serif;
-    line-height: 1.6;   
+    line-height: 1.6;      
 }
-p,h2{
-    font-family:'Roboto', sans-serif;
-    line-height: 1.6; 
-    font-weight:300;
-    font-size: 16px;  
-}
+
 .my-container{
     width: 100%;
     margin: 0 auto;
     padding: 0.5rem 1rem;
-
 }
 .hide{
     display: none;
@@ -32,44 +26,53 @@ p,h2{
 /*--------Navbar-------------------*/
 .top-navbar{
     background-image:url("../images/blue_background_crop.png") ;
-    background-position:bottom;
-    height: 200px;
-    background-size: cover;     
+    background-position:bottom center;
+    background-size:cover; 
 }
- .top-navbar .navbar .navbar-brand img{
+ .navbar .navbar-brand img{
     height: 2.5rem;
 }
-.navbar-light .navbar-toggler {
-    position: absolute;
-    right: 0;
-    border: transparent;
-    font-size: 1.5rem;   
-}
 .navbar-light .navbar-toggler-icon {
-    background-image: url('../images/hm.png');
-    
+    background-image: url('../images/hm.png');  
+}
+.navbar-toggler{
+    border: none;
+    font-size: 2rem;
 }
 .navbar-light .navbar-nav .nav-link{
     color: black;
-    font-weight: bold;
-    text-align: center;
-    background-color: #FFFFFF;
-    border: 1px solid black;
-    padding: 2rem 0;
-    z-index: 1;
+    padding: 1rem 0;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: #FFBB00;
+}
+.navbar{
+    padding:1rem 0;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto auto; 
 }
 .btn-1{
     font-size: 0.8rem;
     padding:0.5rem 2rem;
     border-radius: 10px;
     border:none;
-    position: relative;
-    bottom: -50px;
-    right: 100px;
     outline: none; 
+    margin-right: 0; 
+    margin-top: 1rem;  
+}
+.btn-2{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 0.5rem 0.6rem;
+    margin-right: 1rem;  
+}
+.alighn-right{
+    text-align: center;
+    grid-column: 1 / span 2;
+    border-top: 1px solid #FFFFFF;
+    
 }
 .btn-1 , .btn-2 {
     box-shadow: 6px 8px 6px #888888;
@@ -82,56 +85,35 @@ p,h2{
 .a-style a:hover{
     text-decoration: none;
 }
-.top-navbar .my-container{
-    position:relative;
-    padding-top: 1rem;     
-}
 .carousel-caption{
     text-align: left;
-    position: absolute;
-    top:100px;
-    left: 200px;   
-}
-.carousel-control-next-icon{
-    background-image: url(../images/next.svg);
-}
-.carousel-control-prev-icon{
-    background-image: url(../images/prev.svg);
+    left:0px;
+    top:5px;  
+    position:absolute;    
 }
 .carousel-indicators li{
    background-color: #8A8A8A;
 }
-.carousel-caption h1{
+.carousel-item .carousel-caption h1{
     color: #FFFFFF;
-    font-size:3rem;
     font-weight: bold;
-    margin-right:25rem;
     font-family: 'Poppins', sans-serif;
     line-height:1.6; 
+    font-size:0.9rem;
+    margin-right: 9rem;
 }
-.carousel-caption p{
+.carousel-item .carousel-caption p{
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
-    margin-right: 35rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    font-size:0.5em;
+    margin-right: 6rem;
 }
-.carousel-caption img{
-    margin-right: 0.5rem;
-}
-.top-navbar .showcase a{
-    margin:0 1rem;
-}
-.btn-2{
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    border-radius: 15px;
-    padding: 1rem 2rem;
-    margin-right: 1rem;
-}
-
-/*-------Section1-----------------------------*/
-#section-1 >.my-container{
+/*-------Section1 About us------------------------*/
+#section-1 >.container{
+    display: flex;
     text-align: center;
+    flex-direction: column;
 }
 .ec-logo{
     margin-top: 2rem;
@@ -207,7 +189,7 @@ p,h2{
 .search-grid p{
     font-size: 0.7rem;
 }
-#features .my-container{
+#features .container{
     text-align: center;
 }
 .iphone-features{
@@ -262,7 +244,6 @@ p,h2{
 .center-me {
     text-align: center;
 }
-
 .application-map{
     display: flex;
     justify-content: center;
@@ -310,18 +291,18 @@ p,h2{
 }
 .image1{
     position: absolute;
-    right:0;
+    right:30px;
     bottom: 0;   
 }
 .image2{
    position: absolute;
-   right:120px;
+   right:150px;
    bottom: 0;
    z-index: 1;
 }
 .image3{
    position: absolute;
-   right:270px;
+   right:290px;
    bottom: 0;
 }
 #download .my-container h1 {
@@ -481,29 +462,83 @@ color: #FFFFFF;
 }
 /*--------------------------------------*/
 @media (min-width: 768px) {
-    .min-container {
+   .container {
         max-width: 720px;
+    } 
+    .hide{
+        display: inline;
+    } 
+    .hide-in-ipad{
+        display:none;
     }
+    .carousel-item .carousel-caption h1{
+        font-size: 2rem;
+        margin-right: 15rem;   
+    }
+    .carousel-item .carousel-caption p{
+        font-size: 1rem;
+        margin-right: 10rem;  
+    }
+    #section-1 > .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #about-us .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #about-us h1 , #features h1 {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+    #about-us p {
+      margin-right: 0rem;
+    }
+    .btn-about-us{
+        margin:3rem 0;
+    }
+    #features .container{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       text-align: left;
+    }
+    
+    .pric2{
+        position: absolute;
+        top:150px;
+    }
+    .btn-features{
+        margin-top: 3rem;
+    }
+
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
     .hide{
         display: inline;
     }
-    .btn-1{
-        display:inline;
-        right: 150px;
-        bottom: 0px;
+    .hide-in-ipad{
+        display: inline;
+
     }
-    .top-navbar{
-        height: 700px;
-        background-size: cover;
-        background-position:bottom;  
+    .alighn-right{
+        text-align: right;
+        grid-column: 4;
+        border-top: none;
     }
-     #navbarNavAltMarkup{
-        position: relative;
-        left:150px;  
-    }
+    .navbar{
+        padding:1rem 0;
+        display:grid;
+        grid-template-columns: 1fr 0fr 2fr 1fr;
+    } 
     .navbar-light .navbar-nav .nav-link{
         color: #FFFFFF;
-        font-weight: bold;
+        font-weight:400;
         background-color:transparent;   
         border: none;
     }
@@ -512,26 +547,45 @@ color: #FFFFFF;
        margin-left: 3rem;   
     }
     .navbar-light .navbar-nav .nav-link:hover{
-        text-decoration: underline;
+        text-decoration:underline;
         color: #FFBB00 !important;
     }
-    .top-navbar .my-container{
-        display: flex;
-        padding-top: 2rem;     
-    }
-    
     .top-navbar .navbar .navbar-brand img{
         margin-left: 5rem;
         height: 3rem;    
     }
+    .carousel-caption{
+        top:100px;
+        left:80px;   
+    } 
+    .carousel-indicators li{
+       background-color: #8A8A8A;
+    }
+    .carousel-item .carousel-caption h1{
+        font-size:3rem;
+        margin-right:25rem;
+        
+    }
+    .carousel-item .carousel-caption p{
+        font-size: 1rem;
+        margin-right: 35rem;
+        margin-bottom: 3rem;
+    }
+    .btn-2{
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
+    }
     /*-----------------------------------*/
     .ec-logo{
-        margin-top: 5rem;
-        margin-right: 3rem;
+        display: inline; 
+        margin-top:7rem; 
     }
-    #section-1 > .my-container{
-        display:flex;
-        justify-content: center;
+    #section-1 > .container{
+        display: flex;
+        justify-content:space-evenly;
     }
     .features-grid{
         display:grid;
@@ -540,7 +594,7 @@ color: #FFFFFF;
     }
 
     /****************************************/
-    #about-us .my-container{
+    #about-us .container{
         display:grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
@@ -552,8 +606,8 @@ color: #FFFFFF;
     }
     .btn-about-us{
         margin-top: 6.5rem;
+        margin-bottom: 0;
     }
-    
     #about-us h1 , #features h1 {
         font-size: 2rem;
         margin-right: 15rem;
@@ -562,7 +616,7 @@ color: #FFFFFF;
       margin-right: 4rem;
     }
     /****************************************/
-    #features .my-container{
+    #features .container{
         text-align: left;
         display: grid;
         grid-template-columns: 1.1fr 1fr;
@@ -572,7 +626,7 @@ color: #FFFFFF;
     #features p{
         margin-right: 5rem;
     }
-    #features .my-container .features-grid .search-grid p{
+    #features .container .features-grid .search-grid p{
         margin-right:2rem;
     }
     #features{
@@ -594,25 +648,28 @@ color: #FFFFFF;
         justify-content: space-around;
         flex-direction: row;
     }
- 
     .btn-download2{
-        margin-left: 2rem;
+       
         margin-top: 0;
     }
      #download .my-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 0.5fr 0.5fr;
-        position: relative;
+        position: relative; 
     }
     #download .my-container h1{
-        margin-right: 4rem;
         font-size: 2rem;
+        font-weight:bold;
     }
     .download-application{
-        position: relative;
-        text-align: left;
-        top: 120px;   
+        text-align: left;  
+        margin-top: 5rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
+    }
+    .btn-download2{
+        margin-left: 2rem;
     }
     .form-display{
         display:grid;
@@ -623,25 +680,24 @@ color: #FFFFFF;
     .center-btn{
         text-align: center;  
     }
-}
-@media (min-width: 992px) {
-    .my-container {
-        max-width: 960px;
-    }
+    
 }
 
 @media (min-width: 1200px) {
-    .my-container {
+    .container {
         max-width: 1140px;
     }
+    
 }
 @media (min-width: 1920px) {
-    .my-container {
+    .container {
         max-width: 1400px;
     }
+    
 }
 @media (min-width: 1400px) {
-    .my-container {
+    .container {
          max-width: 1330px;
     }
+    
 }
