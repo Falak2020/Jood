@@ -541,9 +541,9 @@ color: #FFFFFF;
         border-top: none;
     }
     .navbar{
-        padding:1rem 0;
+        padding:2rem 0;
         display:grid;
-        grid-template-columns: 1fr 0fr 2fr 1fr;
+        grid-template-columns: 1fr 0.8fr 2fr 1fr;
     } 
     .navbar-light .navbar-nav .nav-link{
         color: #FFFFFF;
