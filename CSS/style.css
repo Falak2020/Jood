@@ -152,9 +152,6 @@ html,body,h2{
    margin-right:0rem;
    font-family:'Roboto', sans-serif;
 }
-#application-screens h1 ,#contact-us h1{
-    margin-right: 0;
-}
 #about-us p , #features p,#application-screens p,#contact-us p{
     color: #8A8A8A;
     margin-bottom: 2rem;  
@@ -254,23 +251,22 @@ html,body,h2{
     justify-content: space-between;
 }
 .iphone-5-images .ipone-width-s{
-    width:200px;
+    width:100px;
 }
 .iphone-5-images .ipone-width-l{
-    width:250px;
+    width:150px;
 }
 .map{
     position: absolute;
     opacity: 40%;
 }
 #application-screens .statistic h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: URW-DIN-Arabic;
 }
 #application-screens .statistic  p{
-    font-size: 1em;
-    color: #333333;
-    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333333;   
 }
 .statistic{
     display:flex;
@@ -282,6 +278,7 @@ html,body,h2{
     border: none;
     border-radius: 15px;
     box-shadow: 6px 8px 10px #888888;
+    margin-bottom: 1rem;
 }
 .btn-download1:hover , .btn-download2:hover{
     box-shadow: 3px 3px 5px #888888;
@@ -305,7 +302,7 @@ html,body,h2{
    right:290px;
    bottom: 0;
 }
-#download .my-container h1 {
+#download .container h1 {
    line-height: 1.4;
    color: #FFFFFF;
    font-weight:bold;
@@ -313,7 +310,7 @@ html,body,h2{
    margin:1rem 0;
    font-family:'Roboto', sans-serif; 
 }
-#download .my-container p{
+#download .container p{
     color: #ffffff;
     font-size: 0.9rem;
     margin: 2rem 0; 
@@ -512,6 +509,14 @@ color: #FFFFFF;
     .btn-features{
         margin-top: 3rem;
     }
+    .center-me{
+        margin:1rem 5rem;
+    }
+    .statistic{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 }
 @media (min-width: 992px) {
@@ -524,7 +529,6 @@ color: #FFFFFF;
     }
     .hide-in-ipad{
         display: inline;
-
     }
     .alighn-right{
         text-align: right;
@@ -544,7 +548,7 @@ color: #FFFFFF;
     }
     .navbar-light .navbar-nav a{
        display: inline;
-       margin-left: 3rem;   
+       margin-left: 2rem;   
     }
     .navbar-light .navbar-nav .nav-link:hover{
         text-decoration:underline;
@@ -563,12 +567,12 @@ color: #FFFFFF;
     }
     .carousel-item .carousel-caption h1{
         font-size:3rem;
-        margin-right:25rem;
+        margin-right:10rem;
         
     }
     .carousel-item .carousel-caption p{
         font-size: 1rem;
-        margin-right: 35rem;
+        margin-right: 15rem;
         margin-bottom: 3rem;
     }
     .btn-2{
@@ -589,11 +593,10 @@ color: #FFFFFF;
     }
     .features-grid{
         display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;       
     }
 
-    /****************************************/
+   /****************************************/
     #about-us .container{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -610,18 +613,17 @@ color: #FFFFFF;
     }
     #about-us h1 , #features h1 {
         font-size: 2rem;
-        margin-right: 15rem;
+        margin-right: 4rem;
     }
     #about-us p {
-      margin-right: 4rem;
+      margin-right: 0rem;
     }
     /****************************************/
     #features .container{
         text-align: left;
         display: grid;
-        grid-template-columns: 1.1fr 1fr;
-        position: relative;  
-        padding-left: 7rem; 
+        grid-template-columns: 1fr 1.5fr;
+        position: relative;      
     }
     #features p{
         margin-right: 5rem;
@@ -640,37 +642,46 @@ color: #FFFFFF;
     .btn-features{
         margin-top: 7rem;
     }
+    .iphone-5-images .ipone-width-s{
+        width:150px;
+    }
+    .iphone-5-images .ipone-width-l{
+        width:200px;
+    }
     /*-----------------------------*/
     .center-me {
-        margin:3rem 18rem;
+        margin:3rem 11rem;
     }
     .statistic{
         justify-content: space-around;
         flex-direction: row;
     }
-    .btn-download2{
-       
-        margin-top: 0;
+    .btn-download2{   
+    margin-top: 0;
     }
-     #download .my-container{
+     #download .container{
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
         position: relative; 
     }
-    #download .my-container h1{
-        font-size: 2rem;
+    #download .container h1{
+        font-size: 1.5rem;
         font-weight:bold;
+        margin-right:6rem;
+    }
+    #download .container p{
+        margin-right: 7rem;
+
     }
     .download-application{
         text-align: left;  
-        margin-top: 5rem;
-        margin-right: 10rem;
-        margin-left: 10rem;
+        margin-top: 5rem;        
     }
     .btn-download2{
-        margin-left: 2rem;
+        margin-left: 0rem;
+        margin-top: 2rem;
     }
+    /*----------------------------------*/
     .form-display{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -687,7 +698,59 @@ color: #FFFFFF;
     .container {
         max-width: 1140px;
     }
-    
+    .carousel-item .carousel-caption h1{
+        margin-right:25rem;     
+    }
+    .carousel-item .carousel-caption p{
+        margin-right: 35rem;
+    }
+    .navbar-light .navbar-nav a{
+        margin-left: 3rem;   
+    }
+    #about-us h1 , #features h1 {
+        margin-right: 15rem;
+    }
+    #about-us p {
+      margin-right: 4rem;
+    }
+    .btn-download2{
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+    #features .container{
+        grid-template-columns: 1.1fr 1fr;
+        position: relative;  
+        padding-left: 7rem; 
+    }
+    .features-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .center-me {
+        margin:3rem 23rem;
+    }
+    .iphone-5-images .ipone-width-s{
+        width:200px;
+    }
+    .iphone-5-images .ipone-width-l{
+        width:250px;
+    }
+    .download-application{
+        padding-left: 7rem;   
+    }
+    #download .container h1{
+        margin-right: 16rem;
+        font-size: 2rem;
+    }
+    #download .container p{
+        margin-right: 12rem;
+    }
+    #download .container{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+    }
+
 }
 @media (min-width: 1920px) {
     .container {
@@ -700,4 +763,10 @@ color: #FFFFFF;
          max-width: 1330px;
     }
     
+    
 }
+/*@media (min-width: 1024px) {
+    .container {
+         max-width: 1000px;
+    }
+}*/
