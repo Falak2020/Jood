@@ -37,7 +37,7 @@ h2{
     background-size:cover; 
 }
  .navbar .navbar-brand img{
-    height: 2.5rem;
+    height: 3rem;
 }
 .navbar-light .navbar-toggler-icon {
     background-image: url('../images/hm.png');  
@@ -47,14 +47,14 @@ h2{
     font-size: 2rem;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: black;
+    color: #FFFFFF;
     padding: 1rem 0;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: #FFBB00;
 }
 .navbar{
-    padding:1rem 0;
+    padding:2rem 0;
     display:grid;
     grid-template-columns:auto auto;
     grid-template-rows: auto auto; 
@@ -430,27 +430,19 @@ textarea {
     background-image: url('../images/footer-overlay.svg');
     opacity: 0.9;
 }
-
 #footer .navbar{
     display:flex;
     text-align: center;
-}
-.display-flex{
-    display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #footer .container .navbar-brand ,#footer .container .navbar-toggler{
     margin: 2rem 0;
 }
-
-#footer .container #navbarNavAltMarkup{
-    left: 0;
-}
 #footer .container #navbarNavAltMarkup .navbar-nav a{
     margin: 0 2rem;
 }
-#footer .container #navbarNavAltMarkup .navbar-nav{
-   align-items: center;
+#footer .container .row #navbarNavAltMarkup .navbar-nav{
+   text-align: center;
 }
 #footer .container .socialmedia a{
 color: #FFFFFF;
@@ -458,8 +450,8 @@ color: #FFFFFF;
 .socialmedia{
     font-size: 2rem; 
     display: flex;
-    justify-content:space-between;
-    border-top: 1px solid #FFFFFF;  
+    border-top: 1px solid #FFFFFF;
+    justify-content: center;  
 }
 
 .socialmedia-bg{
@@ -487,7 +479,7 @@ color: #FFFFFF;
     }
     .carousel-item .carousel-caption p{
         font-size: 1rem;
-        margin-right: 10rem;  
+        margin-right: 11rem;  
     }
     #section-1 > .container{
         flex-direction: row;
@@ -529,9 +521,6 @@ color: #FFFFFF;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    #footer .container{
-        flex-direction: column;    
     }
     
 }
@@ -582,8 +571,8 @@ color: #FFFFFF;
        background-color: #8A8A8A;
     }
     .carousel-item .carousel-caption h1{
-        font-size:3rem;
-        margin-right:10rem;
+        font-size:2rem;
+        margin-right:18rem;
         
     }
     .carousel-item .carousel-caption p{
@@ -710,8 +699,12 @@ color: #FFFFFF;
     .center-btn{
         text-align: center;  
     }
-    #footer .container , .display-flex{
-        flex-direction: column;
+    .socialmedia{
+        border-top: none;
+    }
+    #footer .container .row .collapse .navbar-nav {
+        text-align: center;
+        margin:0 auto;
     }
   
 }
@@ -721,7 +714,8 @@ color: #FFFFFF;
         max-width: 1140px;
     }
     .carousel-item .carousel-caption h1{
-        margin-right:25rem;     
+        margin-right:25rem; 
+        font-size:3rem;    
     }
     .carousel-item .carousel-caption p{
         margin-right: 35rem;
@@ -772,9 +766,7 @@ color: #FFFFFF;
     #download .container{
         grid-template-columns: 2fr 1fr;
     }
-    .socialmedia{
-        border-top: none;
-    }
+    
     
 
 }
