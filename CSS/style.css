@@ -6,7 +6,7 @@
     src: url(../fonts/FontsFree-Net-URW-DIN-Arabic-Bold-1.ttf);
     font-family:URW-DIN-Arabic ;
 }
-html,body,h2{
+html,body{
     margin:0;
     padding: 0;
     font-size: 16px;
@@ -14,7 +14,14 @@ html,body,h2{
     font-family:'Roboto', sans-serif;
     line-height: 1.6;      
 }
-
+h2{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-weight:300;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.6; 
+}
 .my-container{
     width: 100%;
     margin: 0 auto;
@@ -258,7 +265,7 @@ html,body,h2{
 }
 .map{
     position: absolute;
-    opacity: 40%;
+    opacity:0.2;
 }
 #application-screens .statistic h2{
     font-size: 2.5rem;
@@ -423,15 +430,19 @@ textarea {
     background-image: url('../images/footer-overlay.svg');
     opacity: 0.9;
 }
-#footer .container{
+
+#footer .navbar{
     display:flex;
-    flex-direction: column;
     text-align: center;
-    justify-content: center;     
 }
-#footer .container .navbar-brand{
-    margin-top: 2rem;
+.display-flex{
+    display:flex;
+    justify-content: space-between;
 }
+#footer .container .navbar-brand ,#footer .container .navbar-toggler{
+    margin: 2rem 0;
+}
+
 #footer .container #navbarNavAltMarkup{
     left: 0;
 }
@@ -443,13 +454,14 @@ textarea {
 }
 #footer .container .socialmedia a{
 color: #FFFFFF;
-
 }
 .socialmedia{
     font-size: 2rem; 
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    border-top: 1px solid #FFFFFF;  
 }
+
 .socialmedia-bg{
     width: 50px;
     height: 50px;
@@ -518,7 +530,10 @@ color: #FFFFFF;
         flex-direction: row;
         justify-content: space-between;
     }
-
+    #footer .container{
+        flex-direction: column;    
+    }
+    
 }
 @media (min-width: 992px) {
     .container {
@@ -654,7 +669,7 @@ color: #FFFFFF;
         margin:3rem 11rem;
     }
     .statistic{
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: row;
     }
     .btn-download2{   
@@ -695,7 +710,10 @@ color: #FFFFFF;
     .center-btn{
         text-align: center;  
     }
-    
+    #footer .container , .display-flex{
+        flex-direction: column;
+    }
+  
 }
 
 @media (min-width: 1200px) {
@@ -754,6 +772,10 @@ color: #FFFFFF;
     #download .container{
         grid-template-columns: 2fr 1fr;
     }
+    .socialmedia{
+        border-top: none;
+    }
+    
 
 }
 @media (min-width: 1920px) {
