@@ -101,7 +101,7 @@ h2{
 .carousel-indicators li{
    background-color: #8A8A8A;
 }
-.carousel-item .carousel-caption h1{
+.carousel-item .carousel-caption h1,.mobile-view h1{
     color: #FFFFFF;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -109,12 +109,26 @@ h2{
     font-size:0.9rem;
     margin-right: 9rem;
 }
-.carousel-item .carousel-caption p{
+.carousel-item .carousel-caption p, .mobile-view p{
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     margin-bottom: 1rem;
     font-size:0.5em;
     margin-right: 6rem;
+}
+
+.bg{
+    background-image: url(../images/mobilsl.png);
+    background-size: cover;
+}
+.margin-bottom .btn-2 {
+    margin-bottom:5rem;
+}
+.mobile-view h1{
+    margin-right: 10rem;
+}
+.mobile-view p{
+    margin-right: 9rem;
 }
 /*-------Section1 About us------------------------*/
 #section-1 >.container{
@@ -535,6 +549,9 @@ color: #FFFFFF;
     .hide-in-ipad{
         display: inline;
     }
+    .hide-in-Desktop{
+        display:none;
+    }
     .alighn-right{
         text-align: right;
         grid-column: 4;
@@ -543,7 +560,7 @@ color: #FFFFFF;
     .navbar{
         padding:2rem 0;
         display:grid;
-        grid-template-columns: 1fr 0.8fr 2fr 1fr;
+        grid-template-columns: 1fr 0fr 2fr 1fr;
     } 
     .navbar-light .navbar-nav .nav-link{
         color: #FFFFFF;
@@ -553,11 +570,14 @@ color: #FFFFFF;
     }
     .navbar-light .navbar-nav a{
        display: inline;
-       margin-left: 2rem;   
+       margin-left: 2rem;
     }
     .navbar-light .navbar-nav .nav-link:hover{
-        text-decoration:underline;
-        color: #FFBB00 !important;
+        border-bottom: 1px solid #FFBB00;
+        border-width: 3px;
+       /*text-decoration: underline;
+       color:  #FFBB00 !important;*/
+       
     }
     .top-navbar .navbar .navbar-brand img{
         margin-left: 5rem;
@@ -713,6 +733,9 @@ color: #FFFFFF;
     .container {
         max-width: 1140px;
     }
+    .navbar{
+        grid-template-columns: 1fr 0.8fr 2fr 1fr;
+    } 
     .carousel-item .carousel-caption h1{
         margin-right:25rem; 
         font-size:3rem;    
