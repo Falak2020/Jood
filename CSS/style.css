@@ -273,7 +273,7 @@ h2{
     position: absolute;
     opacity:0.2;
 }
-#application-screens .statistic h2{
+#application-screens .statistic h3{
     font-size: 2.5rem;
     font-family: URW-DIN-Arabic;
 }
@@ -299,6 +299,7 @@ h2{
 .btn-download2{
   margin-top: 1.5rem;
 }
+/*three iphones style, one is in the front of the others*/
 .image1{
     position: absolute;
     right:30px;
@@ -315,6 +316,7 @@ h2{
    right:290px;
    bottom: 0;
 }
+/*------------------------*/
 #download .container h1 {
    line-height: 1.4;
    color: #FFFFFF;
@@ -362,7 +364,7 @@ h2{
     border: none;
     border-radius: 15px;
     outline: none;
-    background-color: #ede7e7;
+    background-color: rgb(251,251,251,0.9);
 }
 textarea {
     width: 100%;
@@ -372,7 +374,7 @@ textarea {
     border: none;
     border-radius: 15px;
     outline: none;
-    background-color: #ede7e7;   
+    background-color: rgb(251,251,251,0.9);   
 }
  label {
     position: absolute;
@@ -389,11 +391,12 @@ textarea {
     height: 100%;
     pointer-events: none;
     text-align: center;
+    left:20px;
 }
 .label-content {
     position: absolute;
     bottom: 5px;
-    left: 5px;
+    left: 20px;
     transition: all 0.3s ease;
     color: rgb(204, 204, 204)
 }
@@ -512,7 +515,6 @@ color: #FFFFFF;
        grid-template-columns: 1fr 1fr;
        text-align: left;
     }
-    
     .pric2{
         position: absolute;
         top:150px;
@@ -527,6 +529,9 @@ color: #FFFFFF;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    #download .container h1{
+        margin:0 10rem;
     }
     
 }
@@ -690,7 +695,7 @@ color: #FFFFFF;
     #download .container h1{
         font-size: 1.9rem;
         font-weight:bold;
-        margin-right:0rem;
+        margin:0rem;
     }
     #download .container p{
         margin-right: 7rem;
