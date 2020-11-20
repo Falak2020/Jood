@@ -514,8 +514,7 @@ color: #FFFFFF;
        text-align: left;
     }
     .pric2{
-        position: absolute;
-        top:150px;
+        display: none;
     }
     .btn-features{
         margin-top: 3rem;
@@ -530,6 +529,9 @@ color: #FFFFFF;
     }
     #download .container h1{
         margin:0 10rem;
+    }
+    .btn-download2{
+        margin-left: 1rem;
     }
     .text-area-format .input-label .label-content{
         left:0;

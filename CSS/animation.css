@@ -1,5 +1,4 @@
-
-
+/* Animation i the section about us*/
 .circle-1-image{
     position: absolute;
     top:0; bottom:0; left:0;right:0;
@@ -45,7 +44,7 @@
                 rotate(-360deg);
     }
 }
-
+/*-Fade in animation------------------------*/
 .fade-in {
     animation: fadeIn ease 6s infinite;
   }
@@ -55,5 +54,17 @@
     }
     100% {
       opacity:1;
+    }
+  }
+  /*---------------------*/
+  .fade-out {
+    animation: fadeOut ease-in-out 5s infinite;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
     }
   }
