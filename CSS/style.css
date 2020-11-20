@@ -15,20 +15,13 @@ html,body{
     line-height: 1.6;      
 }
 h2{
-    margin:0;
-    padding: 0;
     font-size: 16px;
-    font-weight:300;
     font-family:'Roboto', sans-serif;
     line-height: 1.6; 
-}
-.my-container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
+    font-weight: bold;
 }
 .hide{
-    display: none;
+    display: none;/* Don't show in mobile*/
 }
 /*--------Navbar-------------------*/
 .top-navbar{
@@ -78,8 +71,7 @@ h2{
 .alighn-right{
     text-align: center;
     grid-column: 1 / span 2;
-    border-top: 1px solid #FFFFFF;
-    
+    border-top: 1px solid #FFFFFF;   
 }
 .btn-1 , .btn-2 {
     box-shadow: 6px 8px 6px #888888;
@@ -196,8 +188,7 @@ h2{
 }
 /*---Section-2 Features-----------------*/
 .search-grid .features-search{
-    grid-row-start: 1;
-    grid-row-end: 3;
+    margin-top: 0.5rem;
   }
 .search-grid{
     display: grid;
@@ -210,6 +201,7 @@ h2{
 #features .container{
     text-align: center;
 }
+/*Image two iphones and two circles behind style*/
 .iphone-features{
     position: relative;
     margin-top: 5rem;
@@ -227,7 +219,7 @@ h2{
     height: 490px;
     z-index:1;  
 }
-.circl-1-back-1{
+.circl-1-back-1{/*orange circle*/
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -235,7 +227,7 @@ h2{
     right:0;
     top: 100px;   
 }
-.circl-1-back-2{
+.circl-1-back-2{/*white circle*/
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -243,7 +235,7 @@ h2{
     right:45px;
     top: 150px;  /*100+(125-75)*/ 
 }
-.circl-2-back{
+.circl-2-back{/*blue circle*/
     height: 100px;
     width: 100px;
     border-radius: 50%;
