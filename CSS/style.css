@@ -65,7 +65,7 @@ h2{
     border: 1px solid #FFFFFF;
     border-radius: 15px;
     padding: 0.5rem 0.6rem;
-    margin-right: 2rem;  
+    margin-right: 1rem;  
 }
 .alighn-right{
     text-align: center;
@@ -535,6 +535,9 @@ color: #FFFFFF;
     }
     .text-area-format .input-label .label-content{
         left:0;
+    }
+    .btn-2{
+        margin-right:2rem ;
     }
     
     
