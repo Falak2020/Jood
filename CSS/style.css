@@ -121,6 +121,14 @@ h2{
 .mobile-view p{
     margin-right: 9rem;
 }
+.a-style img{
+    box-shadow: 3px 6px 8px blue;
+    border-radius: 50%;
+}
+.a-style img:hover{
+    box-shadow: 3px 2px 3px blue;
+    border-radius: 50%;
+}
 /*-------Section1 About us------------------------*/
 #section-1 >.container{
     display: flex;
@@ -739,8 +747,8 @@ color: #FFFFFF;
     }
     #footer .container .row .collapse .navbar-nav {
          margin: 0 auto;
-    }
-  
+         padding-right: 4rem;
+    } 
 }
 
 @media (min-width: 1200px) {
